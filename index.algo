@@ -1,0 +1,22 @@
+ALGORITHM algorithm_name (str:STRING)
+VAR
+    i : 0
+    vow : ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+    esp: 1
+    char : CHAR
+     length :INTEGER
+BEGIN
+ FOR char in str DO
+   length:=length+1
+   
+   
+   IF (char := " ") THEN
+    esp++
+   END_IF
+  IF (str[i] := vow) THEN
+        i++
+  END_IF
+
+
+ END_FOR
+END
